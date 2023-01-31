@@ -8,6 +8,11 @@ function displayTime() {
 
   
 
+// handle printing the schedule and its data to the page
+
+function printPlannerData() {
+  var projectRowEl = $('<tr>');
+}
 
 
 
