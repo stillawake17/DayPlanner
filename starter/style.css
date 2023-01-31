@@ -34,6 +34,7 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  background-color:grey;
 }
 
 .hour {
@@ -70,49 +71,9 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/* .container {
-  display: grid;
-  grid-template-columns: 50px 200px 40px;
-  text-align: center;
-} */
-
-body {
+.container {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-display: grid;
-
-grid-template-areas: 
-'header header header'
-'main main main'
-'footer footer';
-
-grid-template-columns: 1fr 1fr;
-grid-template-rows:  1fr 70px;
-}
-
-header, 
-main,
-footer {
-
-background-color: steelblue;
-color: #fff;
-padding: 20px;
-border: skyblue 1px solid;
-}
-
-header {
-  grid-area: header;
-}
-nav {
-  grid-area: nav;
-}
-main {
-  grid-area: content;
-}
-
-aside {
-  grid-area: sidebar;
-}
-
-footer {
-  grid-area: footer;
+  display: grid;
+ grid-template-columns: 1fr 4fr 1;
+/* grid-template-rows:  1fr 70px; */
 }
