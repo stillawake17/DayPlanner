@@ -36,6 +36,6 @@ const text11= $('<textarea>').addClass("description");
 const input11 = $('<input>').addClass("input");
 const text12= $('<textarea>').addClass("description");
 const input12 = $('<input>').addClass("input");
-
+const textData1 =  text1.attr("data-entry");
 
   setInterval(displayTime, 1000);
