@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+  />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
@@ -30,10 +34,12 @@
       <p>Current Time &amp; Date: <span id="time-display">00:00:00</span></p>
  
     </header>
+   
     <div class="container">
       <!-- Timeblocks go here -->      
        <div class="time-block time-block-1 row">
         <textarea  id="8am" class="description"></textarea>
+        <input type="text" id="8-text"></input>
        </div>
        <div class="time-block time-block-2 row">
         <textarea  id="9am" class="description"></textarea>
