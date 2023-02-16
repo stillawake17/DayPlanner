@@ -18,6 +18,11 @@ $(document).ready(function () {
   $('#16-hour .description').val(localStorage.getItem('16-hour'))
   $('#17-hour .description').val(localStorage.getItem('17-hour'))
 
+  //   // pseudocode
+//   // if time of rightNow matches the id of the timeblock the colour should be red .present css selector
+//   // if time of rightNow is before the id of the timeblock the colour should be .past css selector
+//   // if time of rightNow is after the time of the timeblock the colour should be .future css selector
+
   function updateHour() {
     var currentTime = moment().hour()
     console.log('current', currentTime)
@@ -42,20 +47,17 @@ $(document).ready(function () {
   setInterval(updateHour, 20000)
 })
 
-// var timeDisplayEl = $('#time-display');
-// var currentTime = moment();
+var timeDisplayEl = $('#time-display');
+var currentTime = moment();
 
 
 // // handle displaying the time
-// function displayTime() {
-//     var rightNow = moment().format('DD MMM YYYY [at] hh:mm:ss a');
-//     timeDisplayEl.text(rightNow);
-//   }
+function displayTime() {
+    var rightNow = moment().format('DD MMM YYYY [at] hh:mm:ss a');
+    timeDisplayEl.text(rightNow);
+  }
 
-//   // pseudocode
-//   // if time of rightNow matches the id of the timeblock the colour should be red .present css selector
-//   // if time of rightNow is before the id of the timeblock the colour should be .past css selector
-//   // if time of rightNow is after the time of the timeblock the colour should be .future css selector
+
 
 //   // Get the value of the input element with id "am8-text" HOW?
 // var am8Value = $('#am8-text').val();
@@ -102,4 +104,4 @@ $(document).ready(function () {
 // const input12 = $('<input>').addClass("input");
 // const textData1 =  text1.attr("data-entry");
 
-//   setInterval(displayTime, 1000);
+  setInterval(displayTime, 1000);
