@@ -35,6 +35,6 @@ The following screenshot shows the current time as displayed on the page:
 ![A user enters their events in the timeblocks and saves them by clicking the button.](./images/screenshot2.png)
 
 ## Use the site
-You can use the app by clicking on the following link.
+You can use the app by clicking on the following link (https://stillawake17.github.io/DayPlanner/).
 
 
