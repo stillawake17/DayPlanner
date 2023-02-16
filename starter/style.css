@@ -3,11 +3,6 @@ body {
   font-size: 16px;
   line-height: 1;
 }
-
-container {
-  max-width: 500px;
-}
-
 textarea {
   background: transparent;
   border: none;
@@ -80,4 +75,7 @@ textarea {
   display: grid;
  grid-template-columns: 1fr 4fr 1;
 /* grid-template-rows:  1fr 70px; */
+  max-width: 500px;
 }
+
+
